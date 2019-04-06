@@ -84,13 +84,8 @@
 			isa = PBXGroup;
 			children = (
 				98A8D9CA2257922B0086DAA4 /* AppDelegate.swift */,
-				98A8D9CC2257922B0086DAA4 /* Scene.sks */,
-				98A8D9CE2257922B0086DAA4 /* Scene.swift */,
-				98A8D9D02257922B0086DAA4 /* ViewController.swift */,
-				98A8D9E0225793530086DAA4 /* HighScore.sks */,
-				98D83D19225900FE0093418F /* StartGame.swift */,
-				98A8D9E1225793530086DAA4 /* StartGame.sks */,
-				98D83D172258E44F0093418F /* HighScore.swift */,
+				98D83D1B225902E80093418F /* SKS */,
+				98D83D1C2259030E0093418F /* GameControl */,
 				98A8D9E422582E3B0086DAA4 /* GoogleService-Info.plist */,
 				98A8D9D22257922B0086DAA4 /* Main.storyboard */,
 				98A8D9D52257922C0086DAA4 /* Assets.xcassets */,
@@ -98,6 +93,27 @@
 				98A8D9DA2257922C0086DAA4 /* Info.plist */,
 			);
 			path = ARTrexRunner;
+			sourceTree = "<group>";
+		};
+		98D83D1B225902E80093418F /* SKS */ = {
+			isa = PBXGroup;
+			children = (
+				98A8D9E0225793530086DAA4 /* HighScore.sks */,
+				98A8D9CC2257922B0086DAA4 /* Scene.sks */,
+				98A8D9E1225793530086DAA4 /* StartGame.sks */,
+			);
+			path = SKS;
+			sourceTree = "<group>";
+		};
+		98D83D1C2259030E0093418F /* GameControl */ = {
+			isa = PBXGroup;
+			children = (
+				98A8D9D02257922B0086DAA4 /* ViewController.swift */,
+				98A8D9CE2257922B0086DAA4 /* Scene.swift */,
+				98D83D19225900FE0093418F /* StartGame.swift */,
+				98D83D172258E44F0093418F /* HighScore.swift */,
+			);
+			path = GameControl;
 			sourceTree = "<group>";
 		};
 		E214C21C6477CA96C222B29A /* Pods */ = {
