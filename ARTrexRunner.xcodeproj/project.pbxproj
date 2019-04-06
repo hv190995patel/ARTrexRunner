@@ -17,6 +17,7 @@
 		98A8D9E2225793530086DAA4 /* HighScore.sks in Resources */ = {isa = PBXBuildFile; fileRef = 98A8D9E0225793530086DAA4 /* HighScore.sks */; };
 		98A8D9E3225793530086DAA4 /* StartGame.sks in Resources */ = {isa = PBXBuildFile; fileRef = 98A8D9E1225793530086DAA4 /* StartGame.sks */; };
 		98A8D9E522582E3B0086DAA4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 98A8D9E422582E3B0086DAA4 /* GoogleService-Info.plist */; };
+		98D83D182258E44F0093418F /* HighScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D83D172258E44F0093418F /* HighScore.swift */; };
 		B44DD71A73D01604BF1864F0 /* Pods_ARTrexRunner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA1CA5DB29B85BF04CEE1596 /* Pods_ARTrexRunner.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,7 @@
 		98A8D9E0225793530086DAA4 /* HighScore.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = HighScore.sks; sourceTree = "<group>"; };
 		98A8D9E1225793530086DAA4 /* StartGame.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StartGame.sks; sourceTree = "<group>"; };
 		98A8D9E422582E3B0086DAA4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		98D83D172258E44F0093418F /* HighScore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighScore.swift; sourceTree = "<group>"; };
 		AA1CA5DB29B85BF04CEE1596 /* Pods_ARTrexRunner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARTrexRunner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD8C2BF1BE2A7264C7435549 /* Pods-ARTrexRunner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARTrexRunner.debug.xcconfig"; path = "Target Support Files/Pods-ARTrexRunner/Pods-ARTrexRunner.debug.xcconfig"; sourceTree = "<group>"; };
 		F46478CBEE61FA9B7C471140 /* Pods-ARTrexRunner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARTrexRunner.release.xcconfig"; path = "Target Support Files/Pods-ARTrexRunner/Pods-ARTrexRunner.release.xcconfig"; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 				98A8D9D02257922B0086DAA4 /* ViewController.swift */,
 				98A8D9E0225793530086DAA4 /* HighScore.sks */,
 				98A8D9E1225793530086DAA4 /* StartGame.sks */,
+				98D83D172258E44F0093418F /* HighScore.swift */,
 				98A8D9E422582E3B0086DAA4 /* GoogleService-Info.plist */,
 				98A8D9D22257922B0086DAA4 /* Main.storyboard */,
 				98A8D9D52257922C0086DAA4 /* Assets.xcassets */,
@@ -233,6 +236,7 @@
 			files = (
 				98A8D9D12257922B0086DAA4 /* ViewController.swift in Sources */,
 				98A8D9CF2257922B0086DAA4 /* Scene.swift in Sources */,
+				98D83D182258E44F0093418F /* HighScore.swift in Sources */,
 				98A8D9CB2257922B0086DAA4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

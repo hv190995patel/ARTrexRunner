@@ -17,12 +17,11 @@ class ViewController: UIViewController, ARSKViewDelegate {
     
     @IBOutlet var sceneView: ARSKView!
     
-     var db:DatabaseReference!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.db = Database.database().reference()
+       
         
         // Set the view's delegate
         sceneView.delegate = self
@@ -31,10 +30,13 @@ class ViewController: UIViewController, ARSKViewDelegate {
         sceneView.showsFPS = true
         sceneView.showsNodeCount = true
         
-        self.db.child("score").setValue("data")
+      
         
         // Load the SKScene from 'Scene.sks'
         if let scene = SKScene(fileNamed: "Scene") {
+            sceneView.presentScene(scene)
+        }
+        else if let scene = SKScene(fileNamed: "HighScore") {
             sceneView.presentScene(scene)
         }
         
