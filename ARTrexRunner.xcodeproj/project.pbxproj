@@ -16,6 +16,8 @@
 		98A8D9D92257922C0086DAA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98A8D9D72257922C0086DAA4 /* LaunchScreen.storyboard */; };
 		98A8D9E2225793530086DAA4 /* HighScore.sks in Resources */ = {isa = PBXBuildFile; fileRef = 98A8D9E0225793530086DAA4 /* HighScore.sks */; };
 		98A8D9E3225793530086DAA4 /* StartGame.sks in Resources */ = {isa = PBXBuildFile; fileRef = 98A8D9E1225793530086DAA4 /* StartGame.sks */; };
+		98A8D9E522582E3B0086DAA4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 98A8D9E422582E3B0086DAA4 /* GoogleService-Info.plist */; };
+		B44DD71A73D01604BF1864F0 /* Pods_ARTrexRunner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA1CA5DB29B85BF04CEE1596 /* Pods_ARTrexRunner.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,10 @@
 		98A8D9DA2257922C0086DAA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		98A8D9E0225793530086DAA4 /* HighScore.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = HighScore.sks; sourceTree = "<group>"; };
 		98A8D9E1225793530086DAA4 /* StartGame.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StartGame.sks; sourceTree = "<group>"; };
+		98A8D9E422582E3B0086DAA4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AA1CA5DB29B85BF04CEE1596 /* Pods_ARTrexRunner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARTrexRunner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD8C2BF1BE2A7264C7435549 /* Pods-ARTrexRunner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARTrexRunner.debug.xcconfig"; path = "Target Support Files/Pods-ARTrexRunner/Pods-ARTrexRunner.debug.xcconfig"; sourceTree = "<group>"; };
+		F46478CBEE61FA9B7C471140 /* Pods-ARTrexRunner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARTrexRunner.release.xcconfig"; path = "Target Support Files/Pods-ARTrexRunner/Pods-ARTrexRunner.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,17 +43,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B44DD71A73D01604BF1864F0 /* Pods_ARTrexRunner.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7D3EAD87F5D41DA6E890F7B6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA1CA5DB29B85BF04CEE1596 /* Pods_ARTrexRunner.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		98A8D9BE2257922B0086DAA4 = {
 			isa = PBXGroup;
 			children = (
 				98A8D9C92257922B0086DAA4 /* ARTrexRunner */,
 				98A8D9C82257922B0086DAA4 /* Products */,
+				E214C21C6477CA96C222B29A /* Pods */,
+				7D3EAD87F5D41DA6E890F7B6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,12 +85,22 @@
 				98A8D9D02257922B0086DAA4 /* ViewController.swift */,
 				98A8D9E0225793530086DAA4 /* HighScore.sks */,
 				98A8D9E1225793530086DAA4 /* StartGame.sks */,
+				98A8D9E422582E3B0086DAA4 /* GoogleService-Info.plist */,
 				98A8D9D22257922B0086DAA4 /* Main.storyboard */,
 				98A8D9D52257922C0086DAA4 /* Assets.xcassets */,
 				98A8D9D72257922C0086DAA4 /* LaunchScreen.storyboard */,
 				98A8D9DA2257922C0086DAA4 /* Info.plist */,
 			);
 			path = ARTrexRunner;
+			sourceTree = "<group>";
+		};
+		E214C21C6477CA96C222B29A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AD8C2BF1BE2A7264C7435549 /* Pods-ARTrexRunner.debug.xcconfig */,
+				F46478CBEE61FA9B7C471140 /* Pods-ARTrexRunner.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 98A8D9DD2257922C0086DAA4 /* Build configuration list for PBXNativeTarget "ARTrexRunner" */;
 			buildPhases = (
+				B754A73D68DF4C560C92F51E /* [CP] Check Pods Manifest.lock */,
 				98A8D9C32257922B0086DAA4 /* Sources */,
 				98A8D9C42257922B0086DAA4 /* Frameworks */,
 				98A8D9C52257922B0086DAA4 /* Resources */,
+				F701D61D7822CAF168F1F4B5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -140,10 +169,62 @@
 				98A8D9D62257922C0086DAA4 /* Assets.xcassets in Resources */,
 				98A8D9E3225793530086DAA4 /* StartGame.sks in Resources */,
 				98A8D9D42257922B0086DAA4 /* Main.storyboard in Resources */,
+				98A8D9E522582E3B0086DAA4 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B754A73D68DF4C560C92F51E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ARTrexRunner-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F701D61D7822CAF168F1F4B5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ARTrexRunner/Pods-ARTrexRunner-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ARTrexRunner/Pods-ARTrexRunner-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		98A8D9C32257922B0086DAA4 /* Sources */ = {
@@ -296,6 +377,7 @@
 		};
 		98A8D9DE2257922C0086DAA4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD8C2BF1BE2A7264C7435549 /* Pods-ARTrexRunner.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -313,6 +395,7 @@
 		};
 		98A8D9DF2257922C0086DAA4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F46478CBEE61FA9B7C471140 /* Pods-ARTrexRunner.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

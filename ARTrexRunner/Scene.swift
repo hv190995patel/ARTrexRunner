@@ -8,6 +8,8 @@
 
 import SpriteKit
 import ARKit
+import Firebase
+
 
 class Scene: SKScene {
     
