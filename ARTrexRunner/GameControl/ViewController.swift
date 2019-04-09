@@ -40,12 +40,6 @@ class ViewController: UIViewController, ARSKViewDelegate {
             sceneView.presentScene(scene)
         }
         
-        
-        
-        
-        
-
-
     }
     
     override func viewWillAppear(_ animated: Bool) {
