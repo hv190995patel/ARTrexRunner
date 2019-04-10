@@ -1,0 +1,6 @@
+framework module Pods_ARTrexRunner {
+  umbrella header "Pods-ARTrexRunner-umbrella.h"
+
+  export *
+  module * { export * }
+}
