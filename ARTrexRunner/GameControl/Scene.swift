@@ -135,25 +135,20 @@ class Scene: SKScene {
        //  self.db.child("score").childByAutoId().setValue(ScoreData)
         //get the data from firebase
         //check if device is already registered to db or not
+            self.db.child("score").observe(DataEventType.childAdded, with:{
+                (snapshot) in
+                let x = snapshot.value as! NSDictionary
+                
+                
+                print("System ID:\(self.deviceId)")
+                print("UserName\(x["name"])")
+                self.tempArray.append(x["DeviceID"] as! String)
+                print("Arrays\(self.tempArray.count)")
+                print("Array vAlue1 is: \(self.tempArray)")
+                
+            })
         
         
-       
-        
-        self.db.child("score").observe(DataEventType.childAdded, with:{
-            (snapshot) in
-            let x  = snapshot.value! as! NSDictionary
-           
-            print("System ID:\(self.deviceId)")
-            print("UserName\(x["name"])")
-            
-            self.tempArray.append(x["DeviceID"] as! String)
-            
-            print("Arrays\(self.tempArray.count)")
-             print("Array vAlue1 is: \(self.tempArray)")
-            //check if current device id is in db
-            //if yes then....
-           
-        })
         checkDevice()
         
         print("Array vAlue is: \(tempArray)")
@@ -162,7 +157,7 @@ class Scene: SKScene {
     }
     
     func checkDevice() {
-        print("CTGGtfgbtyfftvty  \(self.tempArray.count)")
+        print("CTGGtfgbtyfftvty:  \(self.tempArray.count)")
         
         for i in 0..<self.tempArray.count {
             print("tempsdevice:\(self.tempArray[i])")
