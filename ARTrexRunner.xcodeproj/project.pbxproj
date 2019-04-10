@@ -19,6 +19,7 @@
 		98A8D9E522582E3B0086DAA4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 98A8D9E422582E3B0086DAA4 /* GoogleService-Info.plist */; };
 		98D83D182258E44F0093418F /* HighScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D83D172258E44F0093418F /* HighScore.swift */; };
 		98D83D1A225900FE0093418F /* StartGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D83D19225900FE0093418F /* StartGame.swift */; };
+		98FB8F7B225D32CA00AA5911 /* Bullet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FB8F7A225D32CA00AA5911 /* Bullet.swift */; };
 		B44DD71A73D01604BF1864F0 /* Pods_ARTrexRunner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA1CA5DB29B85BF04CEE1596 /* Pods_ARTrexRunner.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,7 @@
 		98A8D9E422582E3B0086DAA4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		98D83D172258E44F0093418F /* HighScore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighScore.swift; sourceTree = "<group>"; };
 		98D83D19225900FE0093418F /* StartGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartGame.swift; sourceTree = "<group>"; };
+		98FB8F7A225D32CA00AA5911 /* Bullet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bullet.swift; sourceTree = "<group>"; };
 		AA1CA5DB29B85BF04CEE1596 /* Pods_ARTrexRunner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARTrexRunner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD8C2BF1BE2A7264C7435549 /* Pods-ARTrexRunner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARTrexRunner.debug.xcconfig"; path = "Target Support Files/Pods-ARTrexRunner/Pods-ARTrexRunner.debug.xcconfig"; sourceTree = "<group>"; };
 		F46478CBEE61FA9B7C471140 /* Pods-ARTrexRunner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARTrexRunner.release.xcconfig"; path = "Target Support Files/Pods-ARTrexRunner/Pods-ARTrexRunner.release.xcconfig"; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				98A8D9CE2257922B0086DAA4 /* Scene.swift */,
 				98D83D19225900FE0093418F /* StartGame.swift */,
 				98D83D172258E44F0093418F /* HighScore.swift */,
+				98FB8F7A225D32CA00AA5911 /* Bullet.swift */,
 			);
 			path = GameControl;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 				98A8D9CF2257922B0086DAA4 /* Scene.swift in Sources */,
 				98D83D182258E44F0093418F /* HighScore.swift in Sources */,
 				98A8D9CB2257922B0086DAA4 /* AppDelegate.swift in Sources */,
+				98FB8F7B225D32CA00AA5911 /* Bullet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
