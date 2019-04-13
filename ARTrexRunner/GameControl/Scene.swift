@@ -33,7 +33,8 @@ class Scene: SKScene {
     
     //asssign data to dictionary
     var ScoreData = [String : Any]()
-    
+     
+   
     
     override func didMove(to view: SKView) {
       //  addImage()
@@ -46,12 +47,9 @@ class Scene: SKScene {
     override func update(_ currentTime: TimeInterval) {
         moveground()
         
-        
-        
         if lastFrameTime <= 0 {
             lastFrameTime = currentTime
         }
-        
         // Update delta time
         deltaTime = currentTime - lastFrameTime
         
@@ -131,28 +129,25 @@ class Scene: SKScene {
     func checkData() {
         //create player details in firebase
         self.db = Database.database().reference()
+       
+//        self.db.child("score").childByAutoId().setValue(ScoreData)
+      
         
-       //  self.db.child("score").childByAutoId().setValue(ScoreData)
         //get the data from firebase
         //check if device is already registered to db or not
             self.db.child("score").observe(DataEventType.childAdded, with:{
                 (snapshot) in
-                let x = snapshot.value as! NSDictionary
-                
-                
-                print("System ID:\(self.deviceId)")
-                print("UserName\(x["name"])")
+
+              let x = snapshot.value as! NSDictionary
+//                print("System ID:\(self.deviceId)")
+                print("UserName1\(x["name"])")
                 self.tempArray.append(x["DeviceID"] as! String)
                 print("Arrays\(self.tempArray.count)")
                 print("Array vAlue1 is: \(self.tempArray)")
-                
+               
             })
-        
-        
-        checkDevice()
-        
+        self.checkDevice()
         print("Array vAlue is: \(tempArray)")
-        
         
     }
     
